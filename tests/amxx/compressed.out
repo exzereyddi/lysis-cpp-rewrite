@@ -1,0 +1,15 @@
+new MaxClients;
+new String:NULL_STRING[4];
+new Float:NULL_VECTOR[3];
+public plugin_init()
+{
+	register_plugin("Compressed output", "1.0", "Someone");
+	return 0;
+}
+
+public client_putinserver(id)
+{
+	console_print(id, "Hi %d", id);
+	return 0;
+}
+

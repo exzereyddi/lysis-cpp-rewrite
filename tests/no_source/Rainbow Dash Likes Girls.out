@@ -1,0 +1,53 @@
+public PlVers:__version =
+{
+	version = 5,
+	filevers = "1.4.4",
+	date = "02/01/2013",
+	time = "12:54:41"
+};
+new Float:NULL_VECTOR[3];
+new String:NULL_STRING[4];
+public Extension:__ext_core =
+{
+	name = "Core",
+	file = "core",
+	autoload = 0,
+	required = 0,
+};
+new MaxClients;
+public Plugin:myinfo =
+{
+	name = "Rainbow Dash Likes Girls",
+	description = "Unknown",
+	author = "Chamamyungsu",
+	version = "1.0.0",
+	url = "http://cafe.naver.com/sourcemulti"
+};
+new String:MyLittlePony[52][2][4];
+new String:Renard[10][2][4];
+public __ext_core_SetNTVOptional()
+{
+	MarkNativeAsOptional("GetFeatureStatus");
+	MarkNativeAsOptional("RequireFeature");
+	MarkNativeAsOptional("AddCommandListener");
+	MarkNativeAsOptional("RemoveCommandListener");
+	VerifyCoreVersion();
+	return 0;
+}
+
+public OnPluginStart()
+{
+	CreateConVar("sm_Rainbow_Dash_Likes_Girls", "1.0.0", "Made By Chamamyungsu", 270656, false, 0.0, false, 0.0);
+	RegConsoleCmd("sm_encrypt", Command_encrypt, "", 0);
+	RegConsoleCmd("sm_decrypt", Command_decrypt, "", 0);
+	return 0;
+}
+
+
+/* ERROR! null */
+ function "Command_encrypt" (number 2)
+
+
+/* ERROR! null */
+ function "Command_decrypt" (number 3)
+
