@@ -1,0 +1,12 @@
+.vs/
+Debug/
+Release/
+x64/
+Trash-Files/
+*.vcxproj.user
+*.pdb
+*.ilk
+*.obj
+*.exp
+*.lib
+*.tlog
